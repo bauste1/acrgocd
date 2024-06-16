@@ -1,0 +1,15 @@
+# traefik-values.yaml
+additionalArguments:
+  - "--entrypoints.web.address=:80"
+  - "--providers.kubernetescrd"
+  - "--providers.kubernetesingress"
+
+# Static configuration for entryPoints
+entryPoints:
+  web:
+    address: ":8080"
+
+# Enabling the Ingress Controller
+providers:
+  kubernetesIngress: {}
+  kubernetesCRD: {}
