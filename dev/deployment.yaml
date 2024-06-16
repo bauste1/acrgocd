@@ -15,5 +15,6 @@ spec:
       containers:
         - name: myapp
           image: schlupp2002/poc:DEV
+          imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 80
